@@ -40,7 +40,7 @@ app.get('/test', function (req, res) {
  function getdata (req,res)  {
 // if (projecdata!=undefined){
 
-    fetch(baseUrl+`${process.env.API_KEY}&of=json&txt=${projecdata.formText}&lang=en`).
+    fetch(baseUrl+`${process.env.API_KEY}&of=json&url=${projecdata.formText}&lang=en`).
     then(res=>{
   return  res.json();
     
@@ -116,4 +116,4 @@ app.get('/data',getdata)
 //     console.log(result)
 //      });
 
-console.log(projecdata)
+ 

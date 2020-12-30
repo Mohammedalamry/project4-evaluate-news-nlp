@@ -41,7 +41,7 @@ const updateUI =   (url='')=>{
 fetch(url).then(res => res.json())
 .then(function(res) {
   console.log(res);
-    document.getElementById('results').innerHTML = res.data.sentence_list[0].text
+    document.getElementById('results').innerHTML = res.data.sentence_list[0].confidence
 })
  
 
